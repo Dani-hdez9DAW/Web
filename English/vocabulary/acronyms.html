@@ -1,0 +1,206 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn a Language!</title>
+    <link rel="stylesheet" href="../../web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin-bottom: 60px; 
+        }
+
+        .menu {
+            background-color: #6CBEEC;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff5733; 
+        }
+
+        .navbar {
+            background-color: #7f34db;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            color: #fff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: rgb(255, 0, 238);
+            transform: scale(1.1);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .card {
+            text-align: center;
+            justify-content: center;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #7f34db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bs-primary-border-subtle" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Learn a language!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../verbs.html">Verbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../menu.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><img src="../../uk.png" alt="banderUK" class="img-fluid" style="max-width: 20px; max-height: 20px;"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-person-circle"></i> Invitado
+            </div>
+        </div>
+    </nav>
+    <ul>
+    </ul>
+    <div class="container mt-5">
+        <h1 class="text-primary text-center">Acronyms</h1>
+
+        <table class="table table-bordered table-striped animate__animated animate__fadeIn">
+            <thead>
+                <tr>
+                    <th class="text-center">Acronym</th>
+                    <th class="text-center">Meaning (English)</th>
+                    <th class="text-center">Translation (Spanish)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">ASP</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Application Service Provider</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Proveedor de Servicios de Aplicación</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">DVD</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Digital Versatile Disk</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Disco Versátil Digital</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">ATM</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Automated Teller Machine</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Cajero Automático</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">PDA</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Personal Digital Assistant</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Asistente Digital Personal</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">EAN</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">European Article Number</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Número de Artículo Europeo</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">BIOS</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Basic Input Output System</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Sistema Básico de Entrada/Salida</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">LAN</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Local Area Network</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Red de Área Local</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">WAN</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Wide Area Network</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Red de Área Amplia</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">OCR</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Optical Character Recognition</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Reconocimiento Óptico de Caracteres</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">ALU</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Arithmetic-Logic Unit</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Unidad Aritmético-Lógica</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">FPU</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Floating Point Unit</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Unidad de Punto Flotante</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">EPOS</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">European Plate Observing System</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Sistema Europeo de Observación de Placas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>&copy; 2023 Daniel Hernandez Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

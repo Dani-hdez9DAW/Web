@@ -1,0 +1,450 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn a Language!</title>
+    <link rel="stylesheet" href="../../web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin-bottom: 60px; 
+        }
+
+        .menu {
+            background-color: #6CBEEC; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff5733;
+        }
+
+        .navbar {
+            background-color: #7f34db;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            color: #fff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: rgb(255, 0, 238);
+            transform: scale(1.1);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .card {
+            text-align: center;
+            justify-content: center;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #7f34db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bs-primary-border-subtle" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Learn a language!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../verbs.html">Verbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../menu.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><img src="../../uk.png" alt="banderUK" class="img-fluid" style="max-width: 20px; max-height: 20px;"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-person-circle"></i> Invitado
+            </div>
+        </div>
+    </nav>
+    <ul>
+    </ul>
+    <div class="container m-5">
+        <h1 class="text-center text-light">Technology vocabulary</h1>
+    <table class="table table-bordered table-striped animate__animated animate__fadeIn">
+    <tr>
+        <th class="text-center">Palabra</th>
+        <th class="text-center">Meaning</th>
+        <th class="text-center">Translation (into Spanish)</th>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Former</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Ex of something</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ex de algo, por ejemplo ex estudiante</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">National diploma</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Grado superior en  (Reino Unido)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">National Certificate</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Grado medio en  (Reino Unido)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Life Cycle</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Series of changes in the life of program</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ciclo de vida de algo (por ejemplo, de un programa)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Payroll</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">A list of company's employees and the amount of money they are to be paid</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Nómina</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Procedural Lang</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">A type of computer programming</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Procesamiento de lenguaje</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Assemble</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To build something,in this case a laptop or a PC</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Montar, ensamblar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Fixo</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Marca de celos</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Undergraduate</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">A person who does not have studies at the moment </td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Persona que no tiene estudios finalizados o no ha terminado hasta la fecha</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Roots</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Raíces</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Resellers</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">People who buy something and the sell it to other</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Compradores (o que comprar para luego vender)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Shortcomings</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Problems with the company</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Problemas</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Fulfil</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Complete a task</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Lograr/Completar algo (una tarea, un logro, etc.)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Release</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To leave something</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Liberar (como free up)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Eye watering price</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Luxury prices which makes you cry</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Precio super caro/muy caro (para echarse a llorar)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Fix bugs</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To repair some problems</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Reparar errores de programación</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Revenue stream</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Get money continually</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ingresos continuos o de manera continua</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Astounding</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Surprising</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Sorprendente</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Fix</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To solve a something</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Arreglar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Improve</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To make things better</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Mejorar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Speech</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Capacidad de hablar / Discurso</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Do on my own</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Do it for yourself</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Hacerlo por mí mismo</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Purpose</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Propósito</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Typesetting tules</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Herramientas de teclado</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Hitherto</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Hasta ahora (de lejos)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Update</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Actualizar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Upgrade</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To improve something</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Mejorar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Upload</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Put something on the Internet</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Subir algo</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Run</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To start up an app</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">En el ámbito informático, significa llevar o poner una aplicación en marcha</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Ported</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">The ability of something to use in other platforms or systems</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Capacidad de algo de utilizarse en otros sistemas, ordenadores, etc.</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Widely</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Big area</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ampliamente</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Wavelength</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Longitud de onda</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Slight</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Something that is does not have much weight</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ligero</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Slightly</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ligeramente</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Beam</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Haz de luz</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Pre-set</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Preestablecido</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Within</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Dentro de (más técnico)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Measures</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">LThe size of something by using an instrument</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Medidas</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Trace</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Trazar (seguir la traza de un producto)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Trap</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">A device or objetc to catch something</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Trampa</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Mousetrap</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">A trap for mouses</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ratonera</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Trigger</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Disparador o lanzador</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Outwit</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To be more intelligent than everyone</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Sobrepasar la inteligencia de los demás</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Motorist</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Driver</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Conductor sobre un vehículo a motor</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Each</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Cada</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Relayed</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Reenviar, relanzar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Headquarter</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Sede de una empresa</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Match</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Emparejar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Fit</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Encajar algo (que se te ajusten los pantalones)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Suit</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Que algo te queda bien (por ejemplo, que te queden bien unos pantalones)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Mailmerge</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Unificación de correo</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Barcode</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Código de barras</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Item</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Object</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Objeto</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Burst</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Something that explode</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Estallar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Bursting point</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Something that is going to explode</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">A punto de estallar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Far too</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Too much</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Demasiado</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Afford</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">To buy something that you can</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Permitirse algo (por ejemplo, un coche, puedo permitirme ese coche)</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Manage</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Gestionar algo</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Havoc</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">Chaos</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Caos</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Outsource</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Externalizar</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Bandwidth</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Ancho de banda</td>
+    </tr>
+    <tr>
+        <td class="text-center table-success animate__animated animate__zoomIn">Broad Width</td>
+        <td class="text-center table-primary animate__animated animate__zoomIn">--</td>
+        <td class="text-center table-secondary animate__animated animate__zoomIn">Anchura de banda</td>
+    </tr>
+    </table>
+</div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>&copy; 2023 Daniel Hernandez Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

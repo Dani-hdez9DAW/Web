@@ -1,0 +1,147 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn a Language!</title>
+    <link rel="stylesheet" href="../web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin-bottom: 60px; 
+        }
+
+        .navbar {
+            background-color: #7f34db;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            color: #fff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: rgb(255, 0, 238);
+            transform: scale(1.1);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .list-group {
+            max-width: 600px; 
+            margin: auto; 
+        }
+
+        .footer {
+            background-color: #7f34db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bs-primary-border-subtle" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Learn a language!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="verbs.html">Verbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><img src="../uk.png" alt="banderUK" class="img-fluid" style="max-width: 20px; max-height: 20px;"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-person-circle"></i> Invitado
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+    <h1 class="display-4 text-light">Learn about technology</h1>
+    <div class="card bg-primary border-primary">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img src="../Borcelle.gif" class="card-img img-thumbnail" alt="Logo" style="padding: 20px; width: 100%; height: auto;width: auto;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Learn a Language!</h5>
+              <p class="card-text text-dark">The main function of this website is to help people learn vocabulary related to technology, where you can see the different words and examples to help you learn English. There are some sections on the website that will help you improve your English knowledge!</p>
+              <p class="card-text text-dark">In the future , some new sections will be added , like an aunthetification of account,practise English,exercises,grammar (that can be conditionals,passives,causative,and so on ) and more!</p>  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <p class="lead text-info">Here you can learn about vocabulary related to Technology, including:</p>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary text-white bg-primary animate__animated animate__fadeIn">Phrasal verbs</li>
+        <li class="list-group-item list-group-item-secondary text-white bg-secondary animate__animated animate__fadeIn">Abbreviations</li>
+        <li class="list-group-item list-group-item-success text-white bg-success animate__animated animate__fadeIn">Technology vocabulary</li>
+    </ul>
+
+    <p class="lead mt-4 text-info">Explore Irregular Verbs in the Verbs section:</p>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-danger text-white bg-danger animate__animated animate__fadeIn">Present</li>
+        <li class="list-group-item list-group-item-danger text-white bg-light animate__animated animate__fadeIn">Past</li>
+        <li class="list-group-item list-group-item-danger text-white bg-dark animate__animated animate__fadeIn">Past Participle</li>
+        <li class="list-group-item list-group-item-warning text-dark bg-warning animate__animated animate__fadeIn">Translation</li>
+    </ul>
+</div>
+
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>&copy; 2023 Daniel Hernandez Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

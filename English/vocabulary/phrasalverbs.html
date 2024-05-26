@@ -1,0 +1,195 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn a Language!</title>
+    <link rel="stylesheet" href="../../web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin-bottom: 60px; 
+        }
+
+        .menu {
+            background-color: #6CBEEC;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff5733; 
+        }
+
+        .navbar {
+            background-color: #7f34db;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            color: #fff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: rgb(255, 0, 238);
+            transform: scale(1.1);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .card {
+            text-align: center;
+            justify-content: center;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #7f34db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bs-primary-border-subtle" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Learn a language!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../verbs.html">Verbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../menu.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><img src="../../uk.png" alt="banderUK" class="img-fluid" style="max-width: 20px; max-height: 20px;"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-person-circle"></i> Invitado
+            </div>
+        </div>
+    </nav>
+    <ul>
+    </ul>
+    <div class="container mt-5">
+        <h1 class="text-light text-center">Phrasal Verbs</h1>
+
+        <table class="table table-bordered table-striped animate__animated animate__fadeIn">
+            <thead>
+                <tr>
+                    <th class="text-center">Verb</th>
+                    <th class="text-center">Definition (English)</th>
+                    <th class="text-center">Translation (Español)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Make up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Give finishing touches to something (in this case, a project)</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Dar los ultimos retoques a un proyecto</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Keep up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Continue, maintain</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Continuar una actividad</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Set up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Prepare something to make it work</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Preparar algo para que funcione</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Start up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Begin an app</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Iniciar una aplicacion</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Backup</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Make a copy or backup</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Respaldo o copia de respaldo</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Build up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Assemble something with different parts</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Construir algo con diferentes piezas</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Catch up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Get up to date</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Alcanzar</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Split up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">End a relationship</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Separar (una relacion)</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Free up</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Release, make available</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Liberar</td>
+                </tr>
+                <tr>
+                    <td class="text-center table-success animate__animated animate__zoomIn">Carry on</td>
+                    <td class="text-center table-danger animate__animated animate__zoomIn">Continue, proceed</td>
+                    <td class="text-center table-warning animate__animated animate__zoomIn">Continuar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>&copy; 2023 Daniel Hernandez Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

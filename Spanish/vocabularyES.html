@@ -1,0 +1,230 @@
+<?php
+session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn a Language!</title>
+    <link rel="stylesheet" href="../web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin-bottom: 60px; 
+        }
+
+        .menu {
+            background-color: #6CBEEC; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #ff5733; 
+        }
+
+        .navbar {
+            background-color: #7f34db;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            color: #fff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: rgb(255, 0, 238);
+            transform: scale(1.1);
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            text-align: center;
+            justify-content: center;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Learn a language!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="indexEs.html">Indice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vocabularyES.html">Vocabulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="verbsEs.html">Verbos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu.html">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><img src="../fondoespana.png" alt="banderaES" class="img-fluid" style="max-width: 20px; max-height: 20px;"></a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-person-circle"></i> Invitado
+            </div>
+        </div>
+    </nav>
+    <ul>
+    </ul>
+    <a class="btn btn-info" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        ¿Qué es esto?
+      </a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Vocabulario</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            En esta seccion aprenderas palabras basicas relacionadas con la tecnologia en Español.
+        </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h1 class="text-primary">Palabras relacionadas con la tecnologia</h1>
+        <table class="table table-bordered table-striped table-hover">
+          <thead class="thead-dark">
+            <tr>
+                <th class="text-center">Palabra en español</th>
+                <th class="text-center">Traduccion al ingles</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Ordenador</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Computer</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Internet</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Internet</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Software</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Software</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Hardware</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Hardware</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Programación</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Programming</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Redes</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Networks</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Ciberseguridad</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Cybersecurity</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Inteligencia Artificial</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Artificial Intelligence</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Nube</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Cloud</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Dispositivo</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Device</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Desarrollo Web</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Web Development</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Realidad Virtual</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Virtual Reality</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Big Data</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Big Data</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Intenet de las cosas (IoT)</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Internet of Things (IoT)</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Algoritmo</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Algorithm</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Descargar</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Download</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Subir algo</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Upload</td>
+            </tr>
+            <tr>
+                <td class="text-center table-dark animate__animated animate__zoomIn">Actualizar</td>
+                <td class="text-center table-primary animate__animated animate__zoomIn">Update</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <footer class="footer mt-5">
+        <div class="container">
+            <p>&copy; 2023 Daniel Hernandez Garcia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
